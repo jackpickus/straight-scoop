@@ -1,5 +1,6 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
+import Link from 'next/link'
 
 const Home: NextPage = () => {
   return (
@@ -18,18 +19,22 @@ const Home: NextPage = () => {
             <span>The Straight Scoop</span>
           </div>
           <div>
-            <ul class="flex text-black">
-              <li class="ml-5 px-2 py-1">Sports</li>
-              <li class="ml-5 px-2 py-1">Picks</li>
-              <li class="ml-5 px-2 py-1">About</li>
-              <li class="ml-5 px-2 py-1 rounded font-semibold text-gray-800 bg-gray-100">Login/Sign Up</li>
+            <ul class="flex">
+              <li class="ml-5 px-2 py-1 hover:underline hover:text-blue-900">Sports</li>
+              <li class="ml-5 px-2 py-1 hover:underline hover:text-blue-900">Picks</li>
+              <li class="ml-5 px-2 py-1 hover:underline hover:text-blue-900">
+                <Link href="/about">
+                  <a>About</a>
+                </Link>
+              </li>
+              <li class="ml-5 px-2 py-1 rounded font-semibold text-gray-800 bg-gray-100 hover:bg-blue-500">Login/Sign Up</li>
             </ul>
           </div>
         </div>
         <div class="container mx-auto text-center">
-          <h1 class="text-black-600 font-semibold">Recent Scoops</h1>
-          <p class="text-green-800">We like sports and we don't care who knows</p>
-          <p>Load more posts</p>
+          <p class="text-4xl underline font-semibold text-blue-500">Recent Scoops</p>
+          <p>Place 5 most recent posts here</p>
+          <p>Load more posts</p> {/*when clicked load 5 more posts */}
         </div>
       </main>
     </div>
