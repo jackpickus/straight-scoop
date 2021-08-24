@@ -1,6 +1,9 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import Link from 'next/link'
+import Image from 'next/image'
+
+export const siteTitle: string = 'The Straight Scoop';
 
 const Home: NextPage = () => {
   return (
@@ -14,9 +17,20 @@ const Home: NextPage = () => {
       <main>
         <div class="items-center justify-between flex bg-green-500 bg-opacity-90 px-12 py-4 my-4 mx-auto shadow-2x1 w-11/12">
           <div class="text-2x1 text-black font-semibold inline-flex items-center">
-            <img src="https://seeklogo.com/images/T/tailwind-css-logo-5AD4175897-seeklogo.com.png" class="w-16 mr-4"
-            alt="logo-img"></img>
-            <span>The Straight Scoop</span>
+            {/* <img src="../../public/images/logo_3.jpg" class="w-16 mr-4"
+            alt="logo-img"></img> */}
+            <Image
+              priority
+              src="/images/logo.jpg"
+              height={60}
+              width={100}
+              alt={siteTitle}
+            />
+            <span>
+              <Link href="/">
+                <a>The Straight Scoop</a>
+              </Link>
+            </span>
           </div>
           <div>
             <ul class="flex">
@@ -27,7 +41,7 @@ const Home: NextPage = () => {
                   <a>About</a>
                 </Link>
               </li>
-              <li class="ml-5 px-2 py-1 rounded font-semibold text-gray-800 bg-gray-100 hover:bg-blue-500">Login/Sign Up</li>
+              <li class="ml-5 px-2 py-1 rounded font-semibold text-gray-800 bg-gray-100 hover:bg-blue-500">Subscribe</li>
             </ul>
           </div>
         </div>
