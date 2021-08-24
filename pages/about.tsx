@@ -1,14 +1,10 @@
-
 import type { NextPage } from 'next'
-import Head from 'next/head'
+import NavLayout from '../components/navbar-layout'
 
 const About: NextPage = () => {
     return(
         <div>
-            <Head>
-                <title>About - The Straight Scoop</title>
-            </Head>
-
+            <NavLayout />
             <main>
                 <div>
                     <p>Straight scoop is a sports/media site delivering key 
