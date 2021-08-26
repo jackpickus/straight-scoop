@@ -23,11 +23,11 @@ const NavLayout: NextPage = () => {
           <Image
             priority
             src="/images/logo.jpg"
-            height={60}
-            width={100}
+            height={80}
+            width={80}
             alt={siteTitle}
           />
-          <span>
+          <span class="text-2xl">
             <Link href="/">
               <a>The Straight Scoop</a>
             </Link>
@@ -35,6 +35,11 @@ const NavLayout: NextPage = () => {
         </div>
         <div>
           <ul class="flex">
+            <li class="ml-5 px-2 py-1 hover:underline hover:text-blue-900">
+              <Link href="/">
+                <a>Home</a>
+              </Link>
+            </li>
             <li class="ml-5 px-2 py-1 hover:underline hover:text-blue-900">
               <Link href="/sports">
                 <a>Sports</a>
