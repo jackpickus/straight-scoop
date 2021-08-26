@@ -56,7 +56,9 @@ const NavLayout: NextPage = () => {
               </Link>
             </li>
             <li class="ml-5 px-2 py-1 rounded font-semibold text-gray-800 bg-gray-100 hover:bg-blue-500">
-              Subscribe
+              <Link href="/subscribe">
+                <a>Subscribe</a>
+              </Link>
             </li>
           </ul>
         </div>
