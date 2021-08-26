@@ -26,7 +26,7 @@ const Subscribe: NextPage = () => {
         </p>
         <form onSubmit={addEmail}>
           <input
-            class="border-2 border-blue-500 focus:border-green-600"
+            class="border-2 border-blue-500 rounded-md focus:outline-black focus:border-green-600"
             type="text"
             placeholder="Your email"
             value={email}
