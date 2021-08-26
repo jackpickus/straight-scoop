@@ -8,8 +8,12 @@ const Subscribe: NextPage = () => {
 
   const addEmail = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
-    setEmails((emails) => [...emails, email]);
-    setEmail("");
+    if (email == "") {
+      //TODO add message to enter email
+    } else {
+      setEmails((emails) => [...emails, email]);
+      setEmail("");
+    }
   };
 
   return (
