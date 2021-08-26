@@ -17,9 +17,10 @@ const Sports: NextPage = () => {
             {sports.map((value: string, index: number) => {
               return (
                 <li key={index} class="py-2">
-                  <Link href={"/" + value}>
+                  {/* <Link href={"/" + value}>
                     <a class="hover:underline hover:text-blue-900">{value}</a>
-                  </Link>
+                  </Link> */}
+                  {value}
                 </li>
               );
             })}
