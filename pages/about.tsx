@@ -7,9 +7,9 @@ const About: NextPage = () => {
       <NavLayout />
       <main>
         <div>
-          <p>
-            Straight scoop is a sports/media site delivering key insights and
-            knowledge to sports fans around the country
+          <p class="container mx-auto text-center">
+            Straight scoop is a sports media site delivering key insights and
+            knowledge to sports fans around the country.
           </p>
         </div>
       </main>
